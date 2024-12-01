@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 // Route to add user and generate PDF with QR code
-app.post('/api/submit', async (req, res) => {
+app.post('/submit', async (req, res) => {
     try {
         const { name, email } = req.body;
 
@@ -134,7 +134,7 @@ app.post('/api/submit', async (req, res) => {
 });
 
 // Route to update the validation field
-app.post('/api/validate', async (req, res) => {
+app.post('/validate', async (req, res) => {
     try {
         const { email } = req.body; // Assume email is sent to identify the user
 
