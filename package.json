@@ -1,0 +1,23 @@
+{
+  "name": "forum-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "dev": "nodemon api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "html-pdf-node": "^1.0.7",
+    "mongoose": "^8.8.3",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4"
+  }
+}
