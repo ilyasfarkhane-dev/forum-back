@@ -10,8 +10,9 @@ const PORT = 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow only requests from your frontend (Next.js)
+    origin: 'https://forum-puce-seven.vercel.app',  // Allowing the deployed frontend
 }));
+
 app.use(bodyParser.json());
 
 // MongoDB connection
