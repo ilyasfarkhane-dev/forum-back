@@ -8,10 +8,11 @@ const PORT = 5000;
 
 // Middleware
 app.use(
-  cors({
-    origin: 'forum-2024.vercel.app', // Allowing the deployed frontend
-  })
-);
+    cors({
+      origin: 'https://forum2024.vercel.app', // Correct domain name
+    })
+  );
+  
 app.use(bodyParser.json());
 
 // MongoDB connection
